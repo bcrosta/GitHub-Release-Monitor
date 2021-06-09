@@ -1,0 +1,26 @@
+
+
+.repository-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.repository-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.repository-text-input {
+    height: 24px;
+}
+
+.repository-card {
+    margin: 10px;
+    width: 200px;
+    border: 2px solid black;
+}
