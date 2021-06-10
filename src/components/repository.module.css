@@ -1,18 +1,21 @@
-
-
 .repository-page {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 10vh;
+    border: 2px solid blue;
+}
+
+.repository-headers {
+    text-align: center;
 }
 
 .repository-list {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    height: 400px;
+    overflow-y: auto;
+    max-height: 600px;
 }
 
 .repository-text-input {
