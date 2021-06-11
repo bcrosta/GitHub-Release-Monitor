@@ -1,10 +1,12 @@
 # GitHub Release Monitor
 
-A tool to keep track of releases made by GitHub repos.   This repository contains an example setup that can be used to create an app.
+[https://github-release-monitor.web.app/](https://github-release-monitor.web.app/)
+
+A tool to keep track of releases made by GitHub repos.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Development Scripts
 
 In the project directory, you can run:
 

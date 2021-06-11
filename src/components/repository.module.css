@@ -4,7 +4,11 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 10vh;
-    border: 2px solid blue;
+    min-width: 320px;
+}
+
+.repository-page a {
+    color: rgb(96, 167, 226);
 }
 
 .repository-headers {
@@ -13,17 +17,87 @@
 
 .repository-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    overflow-x: wrap;
     overflow-y: auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
     max-height: 600px;
 }
 
-.repository-text-input {
+.repository-search__text-input {
     height: 24px;
+    width: 280px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: border-bottom 0.3s ease;
+}
+
+.repository-search__text-input:focus {
+    border-bottom: 1px solid rgb(96, 167, 226);
+}
+
+.repository-search__add-button {
+    height: 30px;
+    width: 50px;
+    margin-left: 6px;
+    border: none;
+}
+
+.repository-search__add-button:focus {
+    border: 1px solid black;
+}
+
+.repository-search__add-button:active {
+    transform: translate(0, 1px);
 }
 
 .repository-card {
+    box-sizing: border-box;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin: 10px 20px;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.repository-card * {
     margin: 10px;
-    width: 200px;
-    border: 2px solid black;
+}
+
+.repository-card__new-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 21px;
+    border: none;
+    background-color: rgb(3, 117, 41);
+    color: white;
+    cursor: pointer;
+}
+
+.repository-card__delete-button {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 2px 5px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid rgb(211, 94, 94);
+    background-color: rgb(211, 94, 94);
+    color: white;
+    cursor: pointer;
 }
